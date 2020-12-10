@@ -14,6 +14,8 @@ jobs:
       - name: List files in Dir
         run: ls
       - name: CHeck dotnet CLI
-        run: dotnet
-      - name: Ckeck NPM
-        run: npm
+        run: dotnet build
+      - name: List files in Dir after dotnet build
+        run: ls TrickingLibrary.Api/ -R
+      - name: Ckeck NPM CLI
+        run: npm -v
